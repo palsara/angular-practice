@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bootstrap-init": {
+    "component-interaction-demo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bootstrap-init",
+            "outputPath": "dist/component-interaction-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,10 +31,12 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "src/environments/environment.ts",
-                "with": "src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -44,29 +46,31 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
-                "type": "initial",
-                "maximumWarning": "2mb",
-                "maximumError": "5mb"
-              }]
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bootstrap-init:build"
+            "browserTarget": "component-interaction-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bootstrap-init:build:production"
+              "browserTarget": "component-interaction-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bootstrap-init:build"
+            "browserTarget": "component-interaction-demo:build"
           }
         },
         "test": {
@@ -103,16 +107,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bootstrap-init:serve"
+            "devServerTarget": "component-interaction-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bootstrap-init:serve:production"
+              "devServerTarget": "component-interaction-demo:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "bootstrap-init"
+    }},
+  "defaultProject": "component-interaction-demo"
 }
