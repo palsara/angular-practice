@@ -1,6 +1,8 @@
+
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { Employee } from 'src/app/model/employee';
 import { MockData } from 'src/app/model/mock-data';
+
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
@@ -8,7 +10,14 @@ import { MockData } from 'src/app/model/mock-data';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor() { }
+  employeeList: Employee[];
+
+  constructor(
+    private mock: MockData
+  ) {
+    this.employeeList = this.mock.employee;
+    this.mock.employee = [];
+  }
 
   ngOnInit() {
   };

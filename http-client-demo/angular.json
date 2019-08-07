@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pipe-directive-demo": {
+    "http-client-demo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,31 +13,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-
-            "optimization": false,
-            "outputHashing": "none",
-            "sourceMap": false,
-            "extractCss": true,
-            "namedChunks": false,
-            "showCircularDependencies": false,
-            "aot": true,
-            "extractLicenses": false,
-            "statsJson": false,
-            "progress": true,
-            "vendorChunk": true,
-            "buildOptimizer": false,
-
-            "outputPath": "dist/pipe-directive-demo",
+            "outputPath": "dist/http-client-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -72,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pipe-directive-demo:build"
+            "browserTarget": "http-client-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pipe-directive-demo:build:production"
+              "browserTarget": "http-client-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pipe-directive-demo:build"
+            "browserTarget": "http-client-demo:build"
           }
         },
         "test": {
@@ -120,15 +106,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pipe-directive-demo:serve"
+            "devServerTarget": "http-client-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "pipe-directive-demo:serve:production"
+              "devServerTarget": "http-client-demo:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "pipe-directive-demo"
+  "defaultProject": "http-client-demo"
 }
