@@ -1,0 +1,50 @@
+<div class="container-fluid">
+      <h1>{{ title }}</h1>
+      <!-- <router-outlet></router-outlet> -->
+<div class="row">
+    <div class="col-3">
+        <div class="searchDiv">
+                <i class="fa fa-search" aria-hidden="true"></i><input type="text" name="searchDiv" id="searchDiv" [(ngModel)]="filterPhrase"></div>
+    </div>
+</div>
+      <div class="row">
+          <div class="col-3 offset-6 mb-2">
+              <button routerLink="/new" changeCounter>New User</button>
+          </div>
+      </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped table-dark text-center">
+        <thead>
+          <tr>
+            <th (click)="onOrder('id')">#</th>
+            <th (click)="onOrder('name')">Name</th>
+            <th (click)="onOrder('isActive')">Active</th>
+            <th (click)="onOrder('age')">Age</th>
+            <th (click)="onOrder('email')">Email</th>
+            <th (click)="onOrder('phone')">Phone</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let user of userList|filter : filterPhrase:changeCounter |order : orderKey:orderDirection :changeCounter">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name.last }} {{ user.name.first }}</td>
+            <td>{{ user.isActive }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>
+              <button class="btn btn-info btn-sm" routerLink="/users/{{user.id}}">Edit</button>
+              <button class="btn btn-danger btn-sm" (click)="confirm(user)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+## Users
+Legyen megjelenítve egy táblázatban az összes User, legyen a táblázat
+kereshető és rendezhető. (az oda-vissza rendezés opcionális)

@@ -1,0 +1,28 @@
+<h1>Add User</h1>
+<form (submit)="onSubmit($event)" action="">
+<div class="form-group">
+  <label for="">Firstame</label>
+  <input name="name" [(ngModel)]="newUser.name.first" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Lastame</label>
+  <input name="name" [(ngModel)]="newUser.name.last" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Active</label>
+  <input name="active" [(ngModel)]="newUser.isActive" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Age</label>
+  <input name="age" [(ngModel)]="newUser.age" type="number" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Email</label>
+  <input name="email" [(ngModel)]="newUser.email" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Phone</label>
+  <input name="phone" [(ngModel)]="newUser.phone" type="tel" class="form-control">
+</div>
+<button class="btn btn-primary" routerLink="/users" (click)="onAdd()">Save</button>
+</form>

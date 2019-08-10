@@ -8,4 +8,6 @@ export class User {
   age: number = 18;
   email: string = '';
   phone: string = '';
+balance ?:any=0;
+favoriteFruit ?:string='';
 }
