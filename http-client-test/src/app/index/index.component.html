@@ -1,12 +1,11 @@
-
-<div class="container">
+<div class="container mt-5">
   <div class="row">
     <div class="col-4">
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Users</h5>
-          <p class="card-text">Users: {{allUsers()}}
+        <i class="fa fa-users fa-3x text-center mt-3" aria-hidden="true"></i>
+        <div class="card-body text-center">
+          <h5 class="card-title ">Users</h5>
+          <p class="card-text ">Users: {{allUsers()}}
             <br>
             Active users: {{activeUsers()}}
             <br>
@@ -20,10 +19,10 @@
 
 
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Balance</h5>
-          <p class="card-text">Summed balance: {{usersBalance()}} </p>
+        <i class="fa fa-balance-scale fa-3x text-center mt-3" aria-hidden="true"></i>
+        <div class="card-body text-center">
+          <h5 class="card-title ">Balance</h5>
+          <p class="card-text ">Summed balance: {{usersBalance()}} </p>
           <a routerLink="/users" class="btn btn-primary">Users</a>
         </div>
       </div>
@@ -31,10 +30,14 @@
     <div class="col-4">
 
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Favorite fruit</h5>
-          <p class="card-text"> Apple: {{favoriteFruit()}}</p>
+        <i class="fa fa-apple fa-3x text-center mt-3" aria-hidden="true"></i>
+        <div class="card-body text-center">
+          <h5 class="card-title ">Favorite fruit</h5>
+          <p class="card-text "> Apple: {{favoriteFruitApple()}}
+            <br>
+            Strawberry: {{favoriteFruitStrawberry()}}
+            <br>
+            Banana: {{favoriteFruitBanana()}}</p>
           <a routerLink="/users" class="btn btn-primary">Users</a>
         </div>
       </div>

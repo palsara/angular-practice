@@ -1,28 +1,40 @@
-<h1>Edit User</h1>
-<form (submit)="onSubmit($event)" action="">
+<h1 class="mt-5 mb-5 text-center">Edit User</h1>
+<form class="text-center" action="">
   <div class="form-group">
-    <label for="">Firstname</label>
-    <input name="name" [(ngModel)]="user.name.first" type="text" class="form-control">
+    <div class="col-6 offset-3">
+      <label for=""><h4>Firstname</h4></label>
+      <input name="name" [(ngModel)]="user.name.first" type="text" class="form-control">
+    </div>
   </div>
   <div class="form-group">
-    <label for="">Lastname</label>
-    <input name="name" [(ngModel)]="user.name.last" type="text" class="form-control">
+    <div class="col-6 offset-3">
+      <label for=""><h4>Lastname</h4></label>
+      <input name="name" [(ngModel)]="user.name.last" type="text" class="form-control">
+    </div>
   </div>
   <div class="form-group">
-    <label for="">Active</label>
-    <input name="active" [(ngModel)]="user.isActive" type="text" class="form-control">
+    <div class="col-6 offset-3">
+      <label for=""> <h4>Active</h4></label>
+      <input name="active" [(ngModel)]="user.isActive" type="text" class="form-control">
+    </div>
   </div>
   <div class="form-group">
-    <label for="">Age</label>
-    <input name="age" [(ngModel)]="user.age" type="number" class="form-control">
+    <div class="col-6 offset-3">
+      <label for=""><h4>Age</h4></label>
+      <input name="age" [(ngModel)]="user.age" type="number" class="form-control">
+    </div>
   </div>
   <div class="form-group">
-    <label for="">Email</label>
-    <input name="email" [(ngModel)]="user.email" type="text" class="form-control">
+    <div class="col-6 offset-3">
+      <label for=""><h4>Email</h4></label>
+      <input name="email" [(ngModel)]="user.email" type="email" class="form-control">
+    </div>
   </div>
   <div class="form-group">
-    <label for="">Phone</label>
-    <input name="phone" [(ngModel)]="user.phone" type="tel" class="form-control">
+    <div class="col-6 offset-3">
+      <label for=""><h4>Phone</h4></label>
+      <input name="phone" [(ngModel)]="user.phone" type="tel" class="form-control">
+    </div>
   </div>
-  <button class="btn btn-primary" routerLink="/users" (click)="onUpdate(user)">Save</button>
+  <button class="btn btn-secondary" (click)="onUpdate(user)">Save</button>
 </form>

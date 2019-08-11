@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { UserService } from '../service/user.service';
 import { User } from '../model/user';
 import { Subscription } from 'rxjs';
@@ -16,7 +16,7 @@ export class UsersComponent implements OnInit {
   filterPhrase: string = '';
   orderKey: string = '';
   orderDirection: number = 1;
-  changeCounter: number = 0;
+ changeCounter: number = 0;
 
 
   constructor(

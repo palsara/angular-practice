@@ -9,8 +9,8 @@
       "age": 25,
       "eyeColor": "brown",
       "name": {
-        "first": "Susana",
-        "last": "Spencer"
+        "first": "Spencer",
+        "last": "Suzana"
       },
       "company": "OVIUM",
       "email": "susana.spencer@ovium.us",
@@ -59,7 +59,7 @@
     {
       "id": 2,
       "guid": "4305c061-5a48-44d5-a13d-b9df034bbb63",
-      "isActive": true,
+      "isActive": "true",
       "balance": "$3,721.38",
       "picture": "http://placehold.it/32x32",
       "age": 33,
@@ -5601,15 +5601,15 @@
       "favoriteFruit": "strawberry"
     },
     {
-      "id": 103,
+      "id": 101,
       "name": {
-        "first": "",
-        "last": "          alma körte"
+        "first": "Kiss",
+        "last": "Béla"
       },
-      "isActive": "true",
-      "age": 22,
-      "email": "almakörte@banan.hu",
-      "phone": "01234567898",
+      "isActive": false,
+      "age": 60,
+      "email": "kissbela@gmail.com",
+      "phone": "06204657383",
       "balance": 0,
       "favoriteFruit": ""
     }

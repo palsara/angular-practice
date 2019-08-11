@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../service/user.service';
 import { User } from '../model/user';
 import { Subscription } from 'rxjs';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -16,9 +17,10 @@ export class UserAddComponent implements OnInit {
   user: User = new User;
   userSubscription: Subscription;
   changeCounter:number=0;
-
+  
   constructor(
-    private us: UserService
+    private us: UserService,
+    private router: Router
   ) {
   }
 
@@ -32,14 +34,16 @@ export class UserAddComponent implements OnInit {
     this.us.create(this.newUser).subscribe(
       user => {
         this.userList.push(user),
-        this.changeCounter++
+        this.router.navigateByUrl('/users');
+
+        
+        
+        
+        
       }
     )
   }
 
-  onSubmit(ev: Event): void {
-    ev.preventDefault();//megakadályozza, hogy frissüljön az oldal a submit gomb lenyomására
-    console.log('itt hívom meg a service update metódusát!', this.user);
-  }
+
 
 }

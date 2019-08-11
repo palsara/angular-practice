@@ -64,7 +64,7 @@ export class IndexComponent implements OnInit {
     return usersBalanceNum;
   }
 
-  favoriteFruit() {
+  favoriteFruitApple() {
     let favoriteFruitArray = [];
     let favoriteFruitApple = 0;
     for (let i = 0; i < this.userList.length; i += 1) {
@@ -74,7 +74,28 @@ export class IndexComponent implements OnInit {
     }
     favoriteFruitApple = favoriteFruitArray.length;
     return favoriteFruitApple
-
   }
+    favoriteFruitStrawberry() {
+      let favoriteFruitArray = [];
+      let favoriteFruitStrawberry = 0;
+      for (let i = 0; i < this.userList.length; i += 1) {
+        if (this.userList[i].favoriteFruit == 'strawberry') {
+          favoriteFruitArray.push(this.userList[i])
+        }
+      }
+      favoriteFruitStrawberry = favoriteFruitArray.length;
+      return favoriteFruitStrawberry;
+    }
+    favoriteFruitBanana() {
+      let favoriteFruitArray = [];
+      let favoriteFruitBanana = 0;
+      for (let i = 0; i < this.userList.length; i += 1) {
+        if (this.userList[i].favoriteFruit == 'banana') {
+          favoriteFruitArray.push(this.userList[i])
+        }
+      }
+      favoriteFruitBanana = favoriteFruitArray.length;
+      return favoriteFruitBanana;
+    }
+  
 }
-

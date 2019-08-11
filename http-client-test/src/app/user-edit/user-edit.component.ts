@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../model/user';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../service/user.service';
 
 @Component({
@@ -15,7 +15,8 @@ export class UserEditComponent implements OnInit {
 
   constructor(
     private ar: ActivatedRoute,
-    private us: UserService
+    private us: UserService,
+    private router:Router
   ) {
     this.ar.params.forEach(params => {
       this.user = this.us.get(params.id)
@@ -24,15 +25,13 @@ export class UserEditComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSubmit(ev: Event): void {
-    ev.preventDefault();//megakadályozza, hogy frissüljön az oldal a submit gomb lenyomására
-    console.log('itt hívom meg a service update metódusát!', this.user);
-  }
+  
   onUpdate(user: User) {
     this.us.update(user = user).subscribe(
       response => {
         console.log(response),
-        this.changeCounter++;
+        this.router.navigateByUrl('/users')
+
 
       }
     )
