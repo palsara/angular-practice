@@ -1,0 +1,27 @@
+[
+    {
+        "email": "sfff@ffff",
+        "password": "dddd",
+        "check": "on"
+    },
+    {
+        "email": "strong.bird@aquacine.co.uk",
+        "password": "strongBird",
+        "check": "on"
+    },
+    {
+        "email": "susana.spencer@ovium.us",
+        "password": "susanaSpencer",
+        "check": "on"
+    },
+    {
+        "email": "banan@banana.banana",
+        "password": "banana",
+        "check": "on"
+    },
+    {
+        "email": "banan@banana.banana",
+        "password": "banana",
+        "check": "on"
+    }
+]
