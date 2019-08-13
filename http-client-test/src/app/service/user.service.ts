@@ -19,11 +19,8 @@ export class UserService {
   }
 
 
-  get(id: number): User {
-    this.getAll().subscribe(
-      users => this.userList = users
-    )
-    return this.userList.filter(user => user.id == id)[0] || new User;
+  getOne(id: number): Observable<User> {
+    return this.http.get<User>(`${this.jsonUrl}/${id}`)
   }
   create(user: User): Observable<User> {
     return this.http.post<User>(this.jsonUrl, user)
