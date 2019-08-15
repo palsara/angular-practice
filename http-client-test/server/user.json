@@ -3,14 +3,23 @@
     {
       "id": 1,
       "guid": "99d82648-a621-4272-bb03-9dfae4ce570f",
+<<<<<<< HEAD
       "isActive": "true",
+=======
+      "isActive": true,
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       "balance": "$1,442.75",
       "picture": "http://placehold.it/32x32",
       "age": 25,
       "eyeColor": "brown",
       "name": {
+<<<<<<< HEAD
         "first": "Spencer",
         "last": "Suzana"
+=======
+        "first": "Susana",
+        "last": "Spencer"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       },
       "company": "OVIUM",
       "email": "susana.spencer@ovium.us",
@@ -59,7 +68,11 @@
     {
       "id": 2,
       "guid": "4305c061-5a48-44d5-a13d-b9df034bbb63",
+<<<<<<< HEAD
       "isActive": "true",
+=======
+      "isActive": true,
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       "balance": "$3,721.38",
       "picture": "http://placehold.it/32x32",
       "age": 33,
@@ -1795,7 +1808,11 @@
     {
       "id": 33,
       "guid": "e8c72045-7939-409c-ae6a-e89a8376cd62",
+<<<<<<< HEAD
       "isActive": true,
+=======
+      "isActive": false,
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       "balance": "$3,511.83",
       "picture": "http://placehold.it/32x32",
       "age": 26,
@@ -2857,6 +2874,7 @@
       "favoriteFruit": "strawberry"
     },
     {
+<<<<<<< HEAD
       "id": 52,
       "guid": "ea6651d8-725c-4da1-ab78-ad5e6aa132ca",
       "isActive": true,
@@ -2882,6 +2900,33 @@
         "nisi",
         "aliqua",
         "voluptate"
+=======
+      "id": 53,
+      "guid": "4d70d6aa-acc0-4d8e-a84a-287eeb6fb725",
+      "isActive": true,
+      "balance": "$2,320.44",
+      "picture": "http://placehold.it/32x32",
+      "age": 23,
+      "eyeColor": "brown",
+      "name": {
+        "first": "Neal",
+        "last": "Mathis"
+      },
+      "company": "DIGINETIC",
+      "email": "neal.mathis@diginetic.biz",
+      "phone": "+1 (922) 515-2364",
+      "address": "884 Dinsmore Place, Aguila, Maine, 7960",
+      "about": "Aute incididunt officia aute duis sint adipisicing nostrud dolor aliquip commodo consequat veniam. Laboris ea labore cupidatat magna voluptate cupidatat proident consectetur. Reprehenderit sint anim esse ea tempor dolore. Consequat esse sint commodo occaecat est sint et nulla velit sunt veniam amet. Tempor occaecat officia deserunt culpa consequat in ex in excepteur. Ad incididunt sunt id ut. Qui irure dolore est fugiat exercitation in minim ex aute aliquip tempor eiusmod.",
+      "registered": "Sunday, December 14, 2014 11:27 AM",
+      "latitude": "26.600962",
+      "longitude": "99.296201",
+      "tags": [
+        "deserunt",
+        "ad",
+        "sit",
+        "incididunt",
+        "ad"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       ],
       "range": [
         0,
@@ -2898,6 +2943,7 @@
       "friends": [
         {
           "id": 0,
+<<<<<<< HEAD
           "name": "Collier Yates"
         },
         {
@@ -2938,22 +2984,7 @@
         "sit",
         "incididunt",
         "ad"
-      ],
-      "range": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "friends": [
-        {
-          "id": 0,
+=======
           "name": "Alice Franks"
         },
         {
@@ -2994,6 +3025,7 @@
         "anim",
         "ipsum",
         "dolore"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       ],
       "range": [
         0,
@@ -3010,6 +3042,48 @@
       "friends": [
         {
           "id": 0,
+<<<<<<< HEAD
+          "name": "Alice Franks"
+        },
+        {
+          "id": 1,
+          "name": "Horne Steele"
+        },
+        {
+          "id": 2,
+          "name": "Ila Todd"
+        }
+      ],
+      "greeting": "Hello, Neal! You have 8 unread messages.",
+      "favoriteFruit": "apple"
+    },
+    {
+      "id": 54,
+      "guid": "1ac22c3f-b8c8-4b0d-b33a-5a2d589c11cb",
+      "isActive": true,
+      "balance": "$1,069.76",
+      "picture": "http://placehold.it/32x32",
+      "age": 32,
+      "eyeColor": "brown",
+      "name": {
+        "first": "Sue",
+        "last": "Howard"
+      },
+      "company": "NEXGENE",
+      "email": "sue.howard@nexgene.tv",
+      "phone": "+1 (918) 599-2748",
+      "address": "639 Rodney Street, Dennard, Maryland, 4368",
+      "about": "Qui elit quis culpa sit. Culpa adipisicing dolore nostrud dolor amet. Elit exercitation magna nulla consequat non Lorem ad dolore consectetur qui. Exercitation eiusmod eiusmod ex dolor consequat id elit aliqua.",
+      "registered": "Sunday, April 15, 2018 9:16 PM",
+      "latitude": "86.305295",
+      "longitude": "150.459296",
+      "tags": [
+        "amet",
+        "dolore",
+        "anim",
+        "ipsum",
+        "dolore"
+=======
           "name": "Clarke Mcintyre"
         },
         {
@@ -3050,6 +3124,7 @@
         "nostrud",
         "do",
         "amet"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       ],
       "range": [
         0,
@@ -3066,6 +3141,48 @@
       "friends": [
         {
           "id": 0,
+<<<<<<< HEAD
+          "name": "Clarke Mcintyre"
+        },
+        {
+          "id": 1,
+          "name": "Gay Strong"
+        },
+        {
+          "id": 2,
+          "name": "Eleanor Dudley"
+        }
+      ],
+      "greeting": "Hello, Sue! You have 6 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "id": 55,
+      "guid": "ee1b84d1-3224-401c-9a97-d82e9826a689",
+      "isActive": false,
+      "balance": "$1,788.88",
+      "picture": "http://placehold.it/32x32",
+      "age": 28,
+      "eyeColor": "blue",
+      "name": {
+        "first": "Villarreal",
+        "last": "James"
+      },
+      "company": "ISOTRACK",
+      "email": "villarreal.james@isotrack.info",
+      "phone": "+1 (956) 488-3441",
+      "address": "784 Court Street, Jacumba, Wyoming, 3401",
+      "about": "Ea exercitation duis dolor do non. Deserunt deserunt quis adipisicing ut consequat culpa velit. Minim ea est fugiat ea in ipsum fugiat ullamco culpa. Commodo qui consequat fugiat exercitation ullamco. Occaecat nulla enim cillum occaecat est quis aute velit nisi anim consequat tempor. Et id ullamco eu ex ex laborum culpa amet aliqua veniam deserunt.",
+      "registered": "Tuesday, July 26, 2016 11:33 AM",
+      "latitude": "43.16055",
+      "longitude": "-127.584418",
+      "tags": [
+        "est",
+        "duis",
+        "nostrud",
+        "do",
+        "amet"
+=======
           "name": "Olive Shaw"
         },
         {
@@ -3106,6 +3223,7 @@
         "fugiat",
         "aliquip",
         "consequat"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       ],
       "range": [
         0,
@@ -3122,6 +3240,48 @@
       "friends": [
         {
           "id": 0,
+<<<<<<< HEAD
+          "name": "Olive Shaw"
+        },
+        {
+          "id": 1,
+          "name": "Bradley Lawson"
+        },
+        {
+          "id": 2,
+          "name": "Caitlin Gilmore"
+        }
+      ],
+      "greeting": "Hello, Villarreal! You have 8 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "id": 56,
+      "guid": "259a2586-c80a-4306-86a4-05b2b70113f0",
+      "isActive": false,
+      "balance": "$3,480.56",
+      "picture": "http://placehold.it/32x32",
+      "age": 39,
+      "eyeColor": "green",
+      "name": {
+        "first": "Hatfield",
+        "last": "Holmes"
+      },
+      "company": "PODUNK",
+      "email": "hatfield.holmes@podunk.net",
+      "phone": "+1 (940) 462-2712",
+      "address": "632 Imlay Street, Loma, Wisconsin, 1748",
+      "about": "Aliquip nulla quis esse dolor. Reprehenderit culpa tempor elit nulla ad commodo. Occaecat amet ullamco laborum do fugiat nulla consectetur et consectetur dolor sunt veniam Lorem. Cupidatat fugiat cupidatat aliquip sunt exercitation incididunt pariatur irure elit ea adipisicing pariatur incididunt. Ad eiusmod amet id laboris eu aute consectetur quis occaecat.",
+      "registered": "Wednesday, January 24, 2018 8:03 PM",
+      "latitude": "-80.222202",
+      "longitude": "-39.369333",
+      "tags": [
+        "quis",
+        "nostrud",
+        "fugiat",
+        "aliquip",
+        "consequat"
+=======
           "name": "Mooney Charles"
         },
         {
@@ -3162,6 +3322,7 @@
         "cupidatat",
         "ut",
         "duis"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       ],
       "range": [
         0,
@@ -3178,6 +3339,48 @@
       "friends": [
         {
           "id": 0,
+<<<<<<< HEAD
+          "name": "Mooney Charles"
+        },
+        {
+          "id": 1,
+          "name": "Cole Hart"
+        },
+        {
+          "id": 2,
+          "name": "Heidi Pruitt"
+        }
+      ],
+      "greeting": "Hello, Hatfield! You have 10 unread messages.",
+      "favoriteFruit": "banana"
+    },
+    {
+      "id": 57,
+      "guid": "bdf3ca3a-02e3-4cec-80f6-a03d9e5d715b",
+      "isActive": true,
+      "balance": "$1,095.79",
+      "picture": "http://placehold.it/32x32",
+      "age": 25,
+      "eyeColor": "blue",
+      "name": {
+        "first": "Simone",
+        "last": "Harding"
+      },
+      "company": "QUARX",
+      "email": "simone.harding@quarx.name",
+      "phone": "+1 (848) 522-2230",
+      "address": "846 Jardine Place, Saranap, North Dakota, 2289",
+      "about": "Duis Lorem tempor aliqua nostrud. Tempor ullamco eiusmod quis aliqua minim voluptate aute. Laboris esse amet mollit et dolor incididunt sint commodo cillum et anim. Eiusmod cupidatat ullamco eu eiusmod nulla do excepteur occaecat est laborum sunt esse ullamco.",
+      "registered": "Sunday, June 14, 2015 7:28 AM",
+      "latitude": "-0.037336",
+      "longitude": "-153.012809",
+      "tags": [
+        "ea",
+        "excepteur",
+        "cupidatat",
+        "ut",
+        "duis"
+=======
           "name": "Misty Nolan"
         },
         {
@@ -3218,6 +3421,7 @@
         "eu",
         "commodo",
         "anim"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       ],
       "range": [
         0,
@@ -3234,6 +3438,106 @@
       "friends": [
         {
           "id": 0,
+<<<<<<< HEAD
+          "name": "Misty Nolan"
+        },
+        {
+          "id": 1,
+          "name": "Mcneil Kramer"
+        },
+        {
+          "id": 2,
+          "name": "Christina Blake"
+        }
+      ],
+      "greeting": "Hello, Simone! You have 6 unread messages.",
+      "favoriteFruit": "banana"
+    },
+    {
+      "id": 58,
+      "guid": "1f53469e-a4ff-4023-bb4b-2b27742a2da5",
+      "isActive": false,
+      "balance": "$2,043.75",
+      "picture": "http://placehold.it/32x32",
+      "age": 38,
+      "eyeColor": "green",
+      "name": {
+        "first": "Gill",
+        "last": "Hendricks"
+      },
+      "company": "ZIALACTIC",
+      "email": "gill.hendricks@zialactic.com",
+      "phone": "+1 (979) 417-3627",
+      "address": "665 Forbell Street, Glasgow, Connecticut, 6147",
+      "about": "Eiusmod duis eiusmod ut reprehenderit culpa sunt amet pariatur officia. Cupidatat aliquip est elit nostrud voluptate nostrud dolore fugiat deserunt ea non sit ut. Sunt eiusmod ad qui est culpa officia minim occaecat ipsum. Excepteur ex nostrud proident ex deserunt nostrud proident et aliqua commodo proident aliqua.",
+      "registered": "Saturday, January 12, 2019 5:12 PM",
+      "latitude": "30.810193",
+      "longitude": "82.906695",
+      "tags": [
+        "aliquip",
+        "cupidatat",
+        "eu",
+        "commodo",
+        "anim"
+=======
+          "name": "Corina Cobb"
+        },
+        {
+          "id": 1,
+          "name": "Sonya Weeks"
+        },
+        {
+          "id": 2,
+          "name": "Maritza Mccall"
+        }
+      ],
+      "greeting": "Hello, Gill! You have 8 unread messages.",
+      "favoriteFruit": "apple"
+    },
+    {
+      "id": 59,
+      "guid": "47f1bde6-5467-4120-85af-e52f94c0f0e6",
+      "isActive": true,
+      "balance": "$2,571.55",
+      "picture": "http://placehold.it/32x32",
+      "age": 22,
+      "eyeColor": "brown",
+      "name": {
+        "first": "Kirby",
+        "last": "Jenkins"
+      },
+      "company": "ZENOLUX",
+      "email": "kirby.jenkins@zenolux.org",
+      "phone": "+1 (885) 505-2287",
+      "address": "441 Judge Street, Rockbridge, Pennsylvania, 3044",
+      "about": "Pariatur ullamco elit id incididunt magna ex mollit ea qui mollit occaecat Lorem. Consectetur id esse eu cillum ad adipisicing non deserunt exercitation. Ad consequat magna est nisi cillum ex. Qui minim deserunt consectetur incididunt sunt voluptate laboris irure. Laborum exercitation labore ad nostrud eiusmod esse ex velit duis.",
+      "registered": "Thursday, May 12, 2016 3:15 AM",
+      "latitude": "-76.578723",
+      "longitude": "-145.989691",
+      "tags": [
+        "fugiat",
+        "ipsum",
+        "nisi",
+        "aliqua",
+        "consectetur"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
+      ],
+      "range": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "friends": [
+        {
+          "id": 0,
+<<<<<<< HEAD
           "name": "Corina Cobb"
         },
         {
@@ -3305,6 +3609,23 @@
       "favoriteFruit": "strawberry"
     },
     {
+=======
+          "name": "Constance Hammond"
+        },
+        {
+          "id": 1,
+          "name": "Bonner York"
+        },
+        {
+          "id": 2,
+          "name": "Carrie Baker"
+        }
+      ],
+      "greeting": "Hello, Kirby! You have 5 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
       "id": 60,
       "guid": "44a55842-28d6-4c0e-843f-70c0e5ddf1d7",
       "isActive": false,
@@ -5603,6 +5924,7 @@
     {
       "id": 101,
       "name": {
+<<<<<<< HEAD
         "first": "Nagy",
         "last": "Béla"
       },
@@ -5612,6 +5934,16 @@
       "phone": "06204657383",
       "balance": 0,
       "favoriteFruit": ""
+=======
+        "first": "József",
+        "last": "Cserkó"
+      },
+      "isActive": false,
+      "age": 47,
+      "email": "j.cserko@gmail.com",
+      "phone": "+36703203348",
+      "favoriteFruit": "strawberry"
+>>>>>>> 529c9b36231410cefc02f045dbbbec8c2364e376
     }
   ]
 }

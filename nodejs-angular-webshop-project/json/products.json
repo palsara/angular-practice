@@ -1,0 +1,180 @@
+[{
+    "id": 1,
+    "name": "Catfish",
+    "price": 3500,
+    "category": "fishes",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/61TZoRgFfML._SL1000_.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 2,
+    "name": "Seahorse",
+    "price": 2500,
+    "category": "fishes",
+    "img": "https://www.olaboats.com/images/noticias/fauna-marina-ibiza/fauna-marina-ibiza-1.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 3,
+    "name": "Clownfish",
+    "price": 2000,
+    "category": "fishes",
+    "img": "http://vargis56.com/image/images-of-fishes-0.jpg",
+    "img2": "https://cdn11.bigcommerce.com/s-wmh3qm4258/images/stencil/1280x1280/products/7317/9780/18362_main__37892.1537410079.jpg?c=2&imbypass=on&imbypass=on",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 4,
+    "name": "Blue tang",
+    "price": 3000,
+    "category": "fishes",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/13/Paletten-Doktorfisch_M%C3%BCnster.JPG",
+    "img2": "https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2014/12/dory_a_l.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 5,
+    "name": "Sea turtle",
+    "price": 5000,
+    "category": "fishes",
+    "img": "https://repeatingislands.files.wordpress.com/2011/02/turtle4.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 6,
+    "name": "Water Sprite",
+    "price": 1000,
+    "category": "plants",
+    "img": "https://cdn.shopify.com/s/files/1/0491/5593/products/Water_Sprite.34290254_std.jpg?v=1454745288",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 7,
+    "name": "Java Fern",
+    "price": 1500,
+    "category": "plants",
+    "img": "https://i.ebayimg.com/images/g/15UAAOSwtPddOMqO/s-l800.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 8,
+    "name": "Frogbit",
+    "price": 12.99,
+    "category": "plants",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/915I-C4CEpL._SL1500_.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 9,
+    "name": "Aquarium Fish Tank Rock Shipwrecks Hiding Cave Landscape Decor Ornament",
+    "price": 500,
+    "category": "tools",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/61oJo2DYosL._SY355_.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 10,
+    "name": "Rainbow Trachyphyllia",
+    "price": 139.99,
+    "category": "corals",
+    "img": "https://www.reef2reef.com/attachments/image-jpg.240050/",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 11,
+    "name": "Soft coral Kenya tree",
+    "price": 20.00,
+    "category": "corals",
+    "img": "https://i.pinimg.com/originals/32/9a/d3/329ad32e6adda0b7f9d89c4fa73f178b.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 12,
+    "name": "Sea anemone",
+    "price": 89.99,
+    "category": "corals",
+    "img": "https://www.monaconatureencyclopedia.com/wp-content/uploads/2008/08/jpg_Coi_suoi_tentacoli_espansi_l_Actinia_equina_sembra_un_misterioso_fiore_marino_come_pensavano_un_tempo_i_biologi_c_Giuseppe_Mazza.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 13,
+    "name": "Orange cup coral",
+    "price": 33.00,
+    "category": "corals",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Extended_tentacles_of_orange_cup_coral.JPG",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 14,
+    "name": "Purple Stylophora",
+    "price": 35.00,
+    "category": "corals",
+    "img": "https://www.tidalgardens.com/pub/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/i/m/img_8455.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 15,
+    "name": " Fish Tank Cleaning Kit",
+    "price": 8.99,
+    "category": "tools",
+    "img": "https://www.discountleisureproducts.co.uk/images/superfish-aqua-tools-aquarium-5-in-1-fish-tank-cleaning-kit-p1148-5704_medium.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 16,
+    "name": " Suspended magnetic cleaner ",
+    "price": 23.99,
+    "category": "tools",
+    "img": "https://cdn.shopify.com/s/files/1/1130/2850/products/glass-scraper-cleaner-aquarium-fish-tank-cleaning-tools-suspended-magnetic-cleaner-brush-aquarium-accessories-size-1_370x.jpg?v=1491112629",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 16,
+    "name": "Aqueon 5 Gallon MiniBow LED Desktop Fish Aquarium Kit ",
+    "price": 60.99,
+    "category": "aquariums",
+    "img": "https://petco.scene7.com/is/image/PETCO/2299958-center-2?$ProductDetail-large$",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 16,
+    "name": "Aqua One Horizon Aquarium Fish Tank & Cabinet 122cm 182L",
+    "price": 349.99,
+    "category": "aquariums",
+    "img": "https://www.realaquatics.co.uk/media/catalog/product/cache/1/image/988x988/9df78eab33525d08d6e5fb8d27136e95/h/o/horizon182.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 17,
+    "name": "8 Gallon LED Glass Aquarium Kit",
+    "price": 101.15,
+    "category": "aquariums",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71S0t0rHiTL._SL1300_.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 18,
+    "name": "Red Sea REEFER Deluxe XXL 625 White 165 gallon",
+    "price": 4209.00,
+    "category": "aquariums",
+    "img": "https://www.fishtanksdirect.com/images/products/display/625wd.jpeg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 19,
+    "name": "Potted tall grass",
+    "price": 8.39,
+    "category": "plants",
+    "img": "http://aquariumplants.club/wp-content/uploads/imported/Potted-Tall-Hairgrass-Easy-Aquatic-Live-Plant-B019JY49GI.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  },
+  {
+    "id": 20,
+    "name": "Ammania Bonsai",
+    "price": 12.99,
+    "category": "plants",
+    "img": "https://cdn.shopify.com/s/files/1/1185/5242/products/DSC_0393_resize_1024x1024.jpg?v=1465484651",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis velit odio, a pulvinar nibh faucibus eget. Donec dictum, massa in efficitur tristique, nulla odio congue elit, ac iaculis risus lectus a leo. Donec lobortis nulla non diam porttitor, in convallis sem vehicula. Ut eleifend sapien sit amet ante blandit venenatis. In massa nibh, euismod ut massa nec, imperdiet cursus lectus. "
+  }
+
+]
