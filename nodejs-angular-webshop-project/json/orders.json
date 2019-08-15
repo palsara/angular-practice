@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [{
     "id": 1,
     "product": 3,
@@ -6,14 +7,32 @@
     "userEmail": "np@gmail.com",
     "quantity": 3,
     "shippingAddress": "Bp, Nagy Kálmán tér 1."
+=======
+[
+  {
+    "id": 1,
+    "product": 3,
+    "insdate": "2019-08-16",
+    "quantity": 3,
+    "userName": "Nagy Piroska",
+    "userEmail": "npm@gmail.com",
+    "shippingAddress": "Bp, Nagy Kálmán tér 5."
+>>>>>>> 8273899271466fbc7fbe2762e13e36b2d5a14bd7
   },
   {
     "id": 2,
     "product": 3,
     "insdate": "2019-08-16",
+<<<<<<< HEAD
     "userName": "nagypiri",
     "userEmail": "np@gmail.com",
     "quantity": 3,
     "shippingAddress": "Bp, Nagy Kálmán tér 1."
+=======
+    "quantity": 3,
+    "userName": "Nagy Piroska",
+    "userEmail": "npm@gmail.com",
+    "shippingAddress": "Bp, Nagy Kálmán tér 5."
+>>>>>>> 8273899271466fbc7fbe2762e13e36b2d5a14bd7
   }
 ]
