@@ -1,15 +1,13 @@
-// Betöltjük a path modulet az elérési utak kezeléséhez
 const path = require('path');
 const fs = require('fs');
 
-// A module egy osztállyal tér vissza, ami az adatbázis fileokat kezeli
+// a modul egy oszrállyal tér vissza, ami az adatbázis fileokat kezeli.
 module.exports = class DB {
-  // A konstruktor megkapja az adott json file nevét
+  // A construktor megkapj a json file nevét.
   constructor(jsonFileName) {
-    // Beállítjuk a json fileokat tartalmazó mappa elérési útját
+    // Beállítjuk a json fájlokat tartalmazó mappa elérési útját.
     this.jsonDirectory = path.join('./../json');
-
-    // Beállítjuk a json file teljes elérési útját
+    // beállítjuk a json fájl teljes elérési útját.
     this.jsonFilePath = path.join(this.jsonDirectory, `${jsonFileName}.json`);
     console.log(this.jsonFilePath);
   }

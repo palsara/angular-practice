@@ -1,17 +1,18 @@
 <div class="container-fluid">
-      <h1>{{ title }}</h1>
-      <!-- <router-outlet></router-outlet> -->
-<div class="row">
+  <h1>{{ title }}</h1>
+  <!-- <router-outlet></router-outlet> -->
+  <div class="row">
     <div class="offset-10 col-4">
-        <div class="searchDiv">
-                <input  type="text"  placeholder="Search.." name="searchDiv" id="searchDiv" [(ngModel)]="filterPhrase"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
+      <div class="searchDiv">
+        <input type="text" placeholder="Search.." name="searchDiv" id="searchDiv" [(ngModel)]="filterPhrase"><i
+          class="fa fa-search fa-2x" aria-hidden="true"></i></div>
     </div>
-</div>
-      <div class="row">
-          <div class="col-3 offset-6 mb-2">
-              <button class="btn btn-secondary text-center" routerLink="/new" changeCounter>New User</button>
-          </div>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-3 offset-6 mb-2">
+      <button class="btn btn-secondary text-center" routerLink="/new" changeCounter>New User</button>
+    </div>
+  </div>
   <div class="row">
     <div class="col-12">
       <table class="table table-striped table-dark text-center">
@@ -28,7 +29,8 @@
         </thead>
 
         <tbody>
-          <tr *ngFor="let user of userList|filter : filterPhrase:changeCounter |order : orderKey:orderDirection :changeCounter">
+          <tr
+            *ngFor="let user of userList|filter : filterPhrase:changeCounter |order : orderKey:orderDirection :changeCounter">
             <td>{{ user.id }}</td>
             <td>{{ user.name.last }} {{ user.name.first }}</td>
             <td>{{ user.isActive }}</td>

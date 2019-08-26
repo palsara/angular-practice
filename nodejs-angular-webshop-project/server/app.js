@@ -1,8 +1,9 @@
 const http = require('http');
+const fs = require('fs');
 const path = require('path');
 
 const port = 3210;
-const GetHandler = require('./module/getHandler');
+const GetHandler = require('./module/gethandler');
 
 const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -17,5 +18,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`Server is listening on port: ${port}.`);
+  console.log(`server is listening on port: ${port}.`);
 });
