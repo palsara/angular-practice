@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './page/index/index.component';
@@ -14,13 +13,13 @@ import { NavComponent } from './nav/nav.component';
     AppComponent,
     IndexComponent,
     AdminComponent,
-    OrderAdminComponent
+    OrderAdminComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

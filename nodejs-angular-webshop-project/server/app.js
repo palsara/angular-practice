@@ -3,7 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const port = 3210;
-const GetHandler = require('./module/gethandler');
+const GetHandler = require('./module/getHandler');
+const PostHandler = require('./module/posthandler');
 
 const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -11,6 +12,15 @@ const server = http.createServer((req, res) => {
   switch (req.method.toLowerCase()) {
     case 'get':
       new GetHandler(req, res);
+      break;
+    case 'post':
+      new PostHandler(req, res);
+      break;
+    case 'put':
+      new PutHandler(req, res);
+      break;
+    case 'delete':
+      new DeleteHandler(req, res);
       break;
     default:
       res.end('Invalid method');
