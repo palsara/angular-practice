@@ -1,5 +1,5 @@
-const urlParser = require('url');
 const DB = require('./db');
+const urlParser = require('url');
 
 module.exports = class PostHandler {
   constructor(req, res) {
@@ -14,8 +14,8 @@ module.exports = class PostHandler {
       data += chunk;
     });
     req.on('end', async () => {
-      const response = await db.create(JSON.parse(data));
-      res.end(JSON.stringify(response));
+      let response = await db.create(JSON.parse(data));
+      res.end( JSON.stringify(response) );
     });
   }
 };

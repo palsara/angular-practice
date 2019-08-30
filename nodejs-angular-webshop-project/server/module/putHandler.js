@@ -1,9 +1,8 @@
 const urlParser = require('url');
 const DB = require('./db');
 
-module.exports = class PostHandler {
+module.exports = class PutHandler {
   constructor(req, res) {
-
     // Example: /orders/7 => ["", "orders", "7"]
     const parsedUrl = urlParser.parse(req.url);
     const reqParams = parsedUrl.pathname.split('/');
@@ -14,8 +13,13 @@ module.exports = class PostHandler {
       data += chunk;
     });
     req.on('end', async () => {
-      const response = await db.create(JSON.parse(data));
-      res.end(JSON.stringify(response));
+      try {
+        const response = await db.update(parseInt(reqParams[2]), JSON.parse(data));
+        res.end(JSON.stringify(response));
+      } catch (e) {
+        res.statusCode = 404;
+        res.end(e.message);
+      }
     });
   }
 };
