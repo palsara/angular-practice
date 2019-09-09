@@ -1,0 +1,68 @@
+<nav [ngStyle]="{'opacity': opacity}" class="navbar navbar-expand-sm navbar-light bg-blue sticky-top">
+  <a class="navbar-brand" routerLink="/">
+    <fa-icon [icon]="faFish" style="color:darkblue"></fa-icon>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/products/fishes">Fishes</a>
+            <a class="dropdown-item" routerLink="/products/plants">Plants</a>
+            <a class="dropdown-item" routerLink="/products/corals">Corals</a>
+            <a class="dropdown-item" routerLink="/products/tools">Tools</a>
+            <a class="dropdown-item" routerLink="/products/aquariums">Aquariums</a>
+          </div>
+        </li>
+      </ul>
+    </ul>
+
+    <div class="dropdown">
+      <button (click)="myFunction()" class=" btn btn-info">Search</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search..." id="myInput" [(ngModel)]="phrase" class="form-control">
+        <a *ngFor="let product of productList| search:phrase" (click)="myFunction()"
+          routerLink="/product/{{product.id}}">{{product.name}}</a>
+      </div>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <fa-icon [icon]="['fas', 'key']" style="color:darkblue"></fa-icon>&nbsp;
+          Don't touch this
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/admin/order">Orders</a>
+          <a class="dropdown-item" routerLink="/admin/products">Products</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="col-1">&nbsp;</div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+<!--
+<div class="container">
+  <footer class="py-5 bg-light">
+    <p class="m-0 text-center ">Copyright &copy; Your Website 2019</p>
+  </footer>
+</div>
+ footer -->

@@ -1,0 +1,54 @@
+<div class="text-center">
+    <h1>Fish in the WEB - Admin page</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="text-center col-12">
+            <a class="btn btn-info"
+               routerLink="/admin/products/add">Add new product</a>
+        </div>
+        <div class="text-center col-4 form-group offset-4">
+            <label for="filter">Filter:</label>
+            <input name="filter"
+                   type="text"
+                   class="form-control"
+                   [(ngModel)]="phrase"
+                   placeholder="Search">
+        </div>
+    </div>
+</div>
+<table class="table table-hover table-fluid table-responsive text-center">
+    <thead>
+        <tr>
+            <th scope="col"
+                (click)="setSorterKey('id')">#</th>
+            <th scope="col"
+                (click)="setSorterKey('name')">Name</th>
+            <th scope="col"
+                (click)="setSorterKey('price')">Price</th>
+            <th scope="col"
+                (click)="setSorterKey('category')">Category</th>
+
+            <th scope="col-2"
+                (click)="setSorterKey('details')">Details</th>
+            <th scope="col">Commands</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of list | search:phrase:changeCounter | sorter:orderKey:orderDirection:changeCounter">
+            <td scope="row">{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.category }}</td>
+
+            <td>{{ product.details }}</td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-secondary"
+                            routerLink="/admin/products/{{product.id}}">Edit</button>
+
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

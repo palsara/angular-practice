@@ -1,0 +1,10 @@
+fa-icon {
+    font-size: 20px;
+}
+
+.card {
+    border-width: 2px;
+}
+.table-hover thead tr:hover th, .table-hover tbody tr:hover td {
+    color: hsl(168, 77%, 42%);
+}

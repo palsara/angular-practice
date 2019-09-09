@@ -1,0 +1,15 @@
+<!-- <pre>{{productList$ | async | json }}</pre> -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <div class="card" style="width: 18rem;" *ngFor="let product of productList">
+        <img class="card-img-top" src="{{product.img}}" alt="">
+        <div class="card-body">
+          <h4 class="card-title">{{product.name}}</h4>
+          <p class="card-text">{{product.details}}</p>
+          <a href="#" class="btn btn-primary">Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

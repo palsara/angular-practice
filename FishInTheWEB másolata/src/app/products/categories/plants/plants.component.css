@@ -1,0 +1,10 @@
+.card {display:inline-block;}
+.card-img-top {
+    width: 100%;
+    min-height: 200px;
+    height: 15vw;
+    object-fit: cover;
+}
+.card {
+    background-image: url("../../../../assets/seamless-underwater-texture-sand-texture-5c745188eb0f7.png");
+  }

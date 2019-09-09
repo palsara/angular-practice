@@ -1,0 +1,78 @@
+<h1 class="mt-5">Orders</h1>
+
+<div class="row mt-5 mb-5">
+  <div class="col-12">
+    <div class="card border-primary bg-light">
+      <div class="card-body">
+        <div class="row mb-3">
+          <div class="col-8 col-md-10">
+            <fa-icon [icon]="faShoppingCart" class="text-primary ml-5"></fa-icon>
+          </div>
+          <div class="col-4 col-md-2">
+            <h5 class="text-primary"><b>{{ allOrders }} orders</b></h5>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width': fishesP + '%'}" aria-valuemin="0"
+            [attr.aria-valuemax]="allOrders">Fishes {{fishes}}</div>
+          <div class="progress-bar bg-primary" role="progressbar" [ngStyle]="{'width': coralsP + '%'}" aria-valuemin="0"
+            [attr.aria-valuemax]="allOrders">Corals {{corals}}</div>
+          <div class="progress-bar bg-info" role="progressbar" [ngStyle]="{'width': plantsP + '%'}" aria-valuemin="0"
+            [attr.aria-valuemax]="allOrders">Plants {{plants}}</div>
+          <div class="progress-bar bg-warning" role="progressbar" [ngStyle]="{'width': toolsP + '%'}" aria-valuemin="0"
+            [attr.aria-valuemax]="allOrders">Tools {{tools}}</div>
+          <div class="progress-bar bg-danger" role="progressbar" [ngStyle]="{'width': aquariumsP + '%'}"
+            aria-valuemin="0" [attr.aria-valuemax]="allOrders">Aquariums {{aquariums}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5 mb-5">
+  <div class="col-md-6 col-4">
+    <input id="search" type="text" class="form-control" placeholder="Search..." [(ngModel)]="phrase">
+  </div>
+  <div class="col-md-2 col-6 offset-2">
+    <button class="btn btn-success btn-block" routerLink="/admin/order-add">ADD NEW ORDER</button>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12">
+    <table class="table table-primary table-hover">
+      <thead>
+        <tr>
+          <th (click)="setSorterKey('id')">⮶ #</th>
+          <th (click)="setSorterKey('insDate')">⮶ Date</th>
+          <th (click)="setSorterKey('product')">⮶ ProductID</th>
+          <th (click)="setSorterKey('category')">⮶ Category</th>
+          <th (click)="setSorterKey('userName')">⮶ User name</th>
+          <th (click)="setSorterKey('userEmail')">⮶ User email</th>
+          <th (click)="setSorterKey('shippingAddress')">⮶ Shipping address</th>
+          <th (click)="setSorterKey('quantity')">⮶ Quantity</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of list | search:phrase:changeCounter | sorter:orderKey:orderDirection:changeCounter">
+          <td>{{ order.id }}</td>
+          <td>{{ order.date }}</td>
+          <td>{{ order.product }}</td>
+          <td>{{ order.category }}</td>
+          <td>{{ order.userName }}</td>
+          <td>{{ order.userEmail }}</td>
+          <td>{{ order.shippingAddress }}</td>
+          <td>{{ order.quantity }}</td>
+          <td>
+            <div class="btn-group">
+              <button class="btn btn-info" routerLink="/admin/order/{{order.id}}">Edit</button>
+              <button class="btn btn-warning ml-1" (click)="onDelete(order)">Delete</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

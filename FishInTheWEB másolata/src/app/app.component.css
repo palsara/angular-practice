@@ -1,0 +1,12 @@
+.gradient {
+  background: linear-gradient(to bottom, #ffffff 0%, #113b57 100%);
+}
+.waterline {
+  width: 100%;
+  position: fixed;
+  z-index: -0.5;
+  opacity: 0.2;
+}
+.container-fluid{
+  margin-top: 89px;
+}

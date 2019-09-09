@@ -1,0 +1,87 @@
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="card">
+        <div class="card-header  bg-dark text-light">
+          <h1 class="card-title">Order</h1>
+        </div>
+        <div class="card-body bg-light text-dark">
+          <form class="text-left " action="">
+            <div class="form-group">
+              <div class="col-8 offset-2">
+                <label for="">
+                  <h4>Product</h4>
+                </label>
+                <input type="text" [(ngModel)]="product.name" name="productName" class="form-control" disabled id="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-8 offset-2">
+                <label for="">
+                  <h4>Price</h4>
+                </label>
+                <input type="text" [(ngModel)]="product.price" name="productPrice" class="form-control" disabled id="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-8 offset-2">
+                <label for="">
+                  <h4>Username</h4>
+                </label>
+                <input name="name" [(ngModel)]="newOrder.userName" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-8 offset-2">
+                <label for="">
+                  <h4>Email</h4>
+                </label>
+                <input name="email" [(ngModel)]="newOrder.userEmail" type="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-8 offset-2">
+                <label for="">
+                  <h4>Shipping Address</h4>
+                </label>
+                <input name="shippingAddress" [(ngModel)]="newOrder.shippingAddress" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-8 offset-2">
+                <label for="">
+                  <h4>Quantity</h4>
+                </label>
+                <input name="quantity" [(ngModel)]="newOrder.quantity" type="number" class="form-control">
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-success text-light"  (click)="onAdd()" data-toggle="modal"
+                data-target="#thxModal">Order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="thxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              Thank you for choosing our products!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" routerLink="/">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

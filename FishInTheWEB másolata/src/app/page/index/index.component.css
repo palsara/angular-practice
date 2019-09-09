@@ -1,0 +1,39 @@
+.card-img-top {
+  width: 100%;
+  height: 13vw;
+  object-fit: cover;
+  min-height: 200px;
+}
+
+.aquarium {
+  background-color: #00ddee;
+}
+
+.card {
+  background-image: url("../../../assets/seamless-underwater-texture-sand-texture-5c745188eb0f7.png");
+}
+
+.carouselDiv {
+  z-index: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: FindNemo;
+}
+
+.line {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.cards {
+  margin-bottom: 100px;
+}
+
+.d-block{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}

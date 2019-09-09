@@ -1,0 +1,16 @@
+
+button {
+  margin-top: 10px;
+  border-radius: 0;
+}
+
+.senilla {
+  width: 100%;
+  height: 10vh;
+  object-fit: cover;
+}
+
+.topM {
+  margin-top: 170px;
+  text-align: center;
+}

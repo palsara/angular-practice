@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+@font-face {
+    font-family: FindNemo;
+    src: url("../src/assets/fonts/FindetNemo-KVxD.otf")format("opentype");
+}
+h1 {
+  text-align: center;
+  font-family: FindNemo;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,99 @@
+<div class="container">
+
+  <div class="row">
+
+
+    <!-- /.col-lg-3 -->
+
+    <div class="col-lg-12">
+      <h1 class="my-4 text-center">{{product.name}}</h1>
+
+      <div class="card mt-4">
+        <div class="row">
+          <div class="col-12 col-md-2 mt-5">
+            <ul class="picker mt-5">
+              <li class="mt-5 mr-2"><img src="{{product.img}}" (click)="showImage2();" data-pin-nopin="true"></li>
+              <li class="mt-5"><img src="{{product.img2}}" (click)="showImage();" data-pin-nopin="true"></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-10">
+            <img class="card-img-top img-fluid mt-5" id="currentImg" alt="productImg" src="{{product.img}}">
+          </div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">{{product.name}}</h3>
+          <h4>${{product.price}}</h4>
+          <p class="card-text">{{product.details}}</p>
+          <span class="text-warning">{{ avg }}&#9733;</span>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <button class="btn btn-info mt-5" routerLink="/order/{{product.id}}">Order</button>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <!-- /.card -->
+
+    <div class="col-12">
+      <div class="product-background card card-outline-secondary mt-5 mb-5">
+        <div class="card-header">
+          Product Reviews
+        </div>
+        <div class="card-body" *ngFor="let review of product.reviews">
+          <p>{{ review.text }}</p>
+          <div class="row">
+            <div class="col-2"><small class="text-muted">Posted by: {{ review.from }}</small></div>
+            <div class="col-1"><small class="text-muted">{{ review.rate }}★</small></div>
+          </div>
+          <hr>
+        </div>
+        <div class="card-footer col-12 text-center">
+          <button href="#" class="btn btn-info" (click)="showReview()">Leave a Review</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 offset-3 mt-5 mb-5 none" id="review">
+      <form action="" class="form">
+        <div class="card">
+          <div class="card-header">Rate Us</div>
+          <div class="card-body">
+            <textarea class="form-control" name="text" [(ngModel)]="newReview.text"
+              placeholder="Write something..."></textarea>
+
+
+            <fieldset class="rating">
+              <input type="radio" [name]="inputName" value="5" [checked]="rating===5" />
+              <label title="Rocks!" (click)='onClick(5)'>5 stars</label>
+
+              <input type="radio" [name]="inputName" value="4" [checked]="rating===4" />
+              <label title="Pretty good" (click)='onClick(4)'>4 stars</label>
+
+              <input type="radio" [name]="inputName" value="3" [checked]="rating===3" />
+              <label title="Meh" (click)='onClick(3)'>3 stars</label>
+
+              <input type="radio" [name]="inputName" value="2" [checked]="rating===2" />
+              <label title="Kinda bad" (click)='onClick(2)'>2 stars</label>
+
+              <input type="radio" [name]="inputName" value="1" [checked]="rating===1"  />
+              <label title="Sucks big time" (click)='onClick(1)'>1 star</label>
+            </fieldset>
+            <br>
+            <input type="text" name="from" class="form-control" [(ngModel)]="newReview.from" placeholder="Your name...">
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-info" (click)="leaveReview()">SEND</button>
+            <button class="btn btn-secondary" (click)="onCancel()">CANCEL</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <!-- /.card -->
+
+  </div>
+
+</div>

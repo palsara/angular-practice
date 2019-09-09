@@ -1,0 +1,81 @@
+fa-icon {
+  font-size: 30px;
+
+}
+
+#navbarmargin {
+  margin-left: 30;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('https://img.icons8.com/android/50/000000/search.png');
+  background-position: 14px 12px;
+  background-size:20px 20px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: 53a7ea;
+}
+
+.show {
+  display: block;
+}
+
+body {
+  padding-top: 56px;
+}
+
+nav {
+  transition: all 0.5s;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  background-color: skyblue;
+
+}
+
+li:hover {
+  transition: all 0.9s;
+  background: #53a7ea;
+  border-radius: 8px;
+
+}

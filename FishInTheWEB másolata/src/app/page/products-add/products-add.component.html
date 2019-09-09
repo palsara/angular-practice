@@ -1,0 +1,60 @@
+<div>&nbsp;</div>
+<div class="text-center">
+    <h1>Fish in the WEB - Admin page</h1>
+    <h2>Add new product</h2>
+</div>
+<div>&nbsp;</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div>&nbsp;</div>
+
+            <form class="form-group text-center"
+                  action=""
+                  (submit)="onSubmit($event)">
+                <label for="name">Name</label>
+                <input class="form-control"
+                       id="name"
+                       name="firstName"
+                       type="text"
+                       [(ngModel)]="newProduct.name">
+                <label for="price">Price</label>
+                <input class="form-control"
+                       id="price"
+                       name="lastName"
+                       type="text"
+                       [(ngModel)]="newProduct.price">
+                <label for="category">Category</label>
+                <input class="form-control"
+                       id="category"
+                       name="age"
+                       type="text"
+                       [(ngModel)]="newProduct.category">
+                <label for="details">Details</label>
+                <input name="details"
+                       id="details"
+                       class="form-control"
+                       type="text"
+                       [(ngModel)]="newProduct.details">
+                <label for="imgSource">Img source</label>
+                <input class="form-control"
+                       id="imgSource"
+                       name="imgSource"
+                       type="text"
+                       [(ngModel)]="newProduct.img">
+                <div>&nbsp;</div>
+                <div class="col-12 text-center">
+                    <button (click)="onCreate()"
+                            class="btn btn-info"
+                            routerLink="/admin/products">Create</button>
+                </div>
+                <div>&nbsp;</div>
+                <div class="col-12 text-center">
+                    <button (click)="onNewCancel()"
+                            class="btn btn-danger">Reset</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<h1 class="text-center mt-5">Plants</h1>
+<div class="container mt-5 text-center">
+  <div class="row">
+    <div class="col-md-4 col-12 mb-5" *ngFor="let product of productList |filter:'plants'">
+      <div class="card bg-primary text-light" style="width: 18rem;">
+        <img class="card-img-top img-fluid" src="{{product.img}}" alt="">
+        <div class="card-body">
+          <h4 class="card-title">{{product.name}}</h4>
+          <p class="card-text">{{product.details1}}</p>
+          <p class="card-text">${{product.price}}</p>
+          <a href="#" routerLink="/product/{{product.id}}" class="btn btn-primary">Show more!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
