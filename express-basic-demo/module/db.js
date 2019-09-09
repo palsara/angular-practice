@@ -48,27 +48,27 @@ module.exports = class DB {
    * @param {number} id id of the object which will be update.
    * @param {Object} obj object which will be replaces existing object.
    */
-  async update(id, obj) {
-      // Lekérni az összes adatot a json fájlból (this.getJsonArray)
-      let dataArray = await this.getJsonArray();
+    async update(id, obj) {
+        // Lekérni az összes adatot a json fájlból (this.getJsonArray)
+        let dataArray = await this.getJsonArray();
 
-      if (obj.id !== id) {
-        throw new Error(`Object id isn't met with url parameter. ${id} !== ${obj.id}`);
-      }
-
-      // Megkeresni melyiknek az id-je azonos a paraméterben kapott id-vel.
-      // Kicsrélni a megtalált objektumot a paraméterben kapottal.
-      for (let i = 0; i < dataArray.length; i++) {
-        if (dataArray[i].id === id) {
-          dataArray[i] = obj;
-          break;
+        if (obj.id !== id) {
+          throw new Error(`Object id isn't met with url parameter. ${id} !== ${obj.id}`);
         }
-      }
 
-      // Visszaírni az adtokat a fájlba (this.write)
-      await this.write(dataArray);
-      return obj;
-  }
+        // Megkeresni melyiknek az id-je azonos a paraméterben kapott id-vel.
+        // Kicsrélni a megtalált objektumot a paraméterben kapottal.
+        for (let i = 0; i < dataArray.length; i++) {
+          if (dataArray[i].id === id) {
+            dataArray[i] = obj;
+            break;
+          }
+        }
+
+        // Visszaírni az adtokat a fájlba (this.write)
+        await this.write(dataArray);
+        return obj;
+    }
 
   async create(item) {
     let dataArray = await this.getJsonArray();
