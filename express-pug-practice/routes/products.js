@@ -14,4 +14,19 @@ router.get('/', async (req, res, next) => {
         products: realData,
     });
 });
+
+router.get('/new', async (req, res, next) => {
+    res.render('new-product');
+});
+
+// Create new product.
+router.post('/', async (req, res, next) => {
+    let result = await db.create(req.body);
+    res.json(result);
+});
+
+router.get('/delete/:id', async (req, res, next) => {
+
+});
+
 module.exports = router;
