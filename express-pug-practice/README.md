@@ -1,5 +1,15 @@
 # Express + Pug gyakorló feladat
+## Kezdő lépések
+npm i
+npm i -g protractor
+npm i -g webdriver-manager
+webdriver-manager update
+JAVA telepítése
 
+## Tesztek futtatása
+1. console: webdriver-manager start
+2. console: nodemon .\bin\www
+3. console: npm test
 ## Kezdő lépések
 `npm i`  
 `npm i -g protractor`  

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .row
+    each product in products
+      .col-4
+        .card(style='width: 20rem;') 
+          .card-header
+            h5.card-title= product.name
+          .card-body
+            p.card-text Manufacturer: #{product.manufacturer}
+            p.card-text Price: $#{product.price}
+          .card-footer
+            a.btn.btn-info.btn-block.card-link(href='/about') Show
+        br
