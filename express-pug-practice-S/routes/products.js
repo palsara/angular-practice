@@ -25,14 +25,14 @@ router.post('/', async (req, res, next) => {
     res.redirect('/products');
 });
 
-router.get('/delete/:id', async (req, res, next) => {
+router.get('/delete/:id', async (req, res, next) => { //get-tel törlünk
     let id = req.params.id || 0;
     await db.delete(id);
     res.redirect('/products');
 });
 
 
-router.get('/edit/:id', async (req, res, next) => {
+router.get('/edit/:id', async (req, res, next) => { // lehet id nélkül is, a product-ban benne van
     let id = req.params.id || 0;
     let data = await db.readOne(id);
     console.log(data[0]);

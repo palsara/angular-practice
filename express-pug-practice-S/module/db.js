@@ -72,16 +72,16 @@ module.exports = class DB {
     const sql = `
       DELETE 
       FROM products
-      WHERE id=${id}`;
+      WHERE products.id=${id}`;
     const result = await this.conn.query(sql);
     return result;
   }
 
-  async update(id, data) {
+  async update(id, data) { // nem kötelező az id, a data-ban benne van
     const sql = `
     UPDATE products
     SET name='${data.name}',manufacturer=${data.manufacturer},price=${data.price},stock=${data.stock},active=${data.active}
-    WHERE id=${id}`;
+    WHERE products.id=${id}`;
     const result = await this.conn.query(sql);
     return result;
   }
