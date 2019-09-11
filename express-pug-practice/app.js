@@ -29,6 +29,8 @@ app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/contact', contactRouter);
 app.use('/about', aboutRouter);
+app.use('/delete/:id', productsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
