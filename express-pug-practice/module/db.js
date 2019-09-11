@@ -8,14 +8,33 @@ module.exports = class DB {
         pool.getConnection().then( conn => this.conn = conn );
     }
 
-    async login(user) {
-        let sql = `
-            SELECT * FROM users 
-            WHERE email = '${user.email}' 
-                AND password = SHA1('${user.password}')
-        `;
-        let result = await this.conn.query(sql);
-        return result;
+    mockData() {
+        return new Promise( (resolve, reject) => {
+            let filePath = path.join(__dirname, 'products.json');
+            fs.readFile(filePath, 'utf8', (err, content) => {
+                if (err) {
+                    return reject(err);
+                }
+                resolve(JSON.parse(content));
+            });
+        });
+    }
+
+    table() {
+        `
+        CREATE TABLE products (
+            id INT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(100) NOT NULL DEFAULT '0',
+            price INT NOT NULL DEFAULT 0,
+            stock INT NOT NULL DEFAULT 0,
+            manufacturer INT NOT NULL DEFAULT 0,
+            active TINYINT NULL,
+            insdate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+            PRIMARY KEY (id)
+        )
+        COMMENT='Tabler for products.'
+        COLLATE='utf8_general_ci'
+        `
     }
 
     async read(id) {

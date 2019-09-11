@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  .row
+    each product in products
+      .col-sm-12.col-md-4.mb-3
+        .card.h-100
+          .card-header 
+            h4= product.name
+          .card-body
+            .p Manufacturer: #{product.manufacturer}
+            .p Price: #{product.price}
+          .card-footer
+            - let url = `/products/delete/${product.id}`;
+            - let updateUrl = `/products/update/${product.id}`;
+            .btn-group
+              a.btn.btn-info Show
+              a.btn.btn-warning(href=updateUrl) Update
+              a.btn.btn-danger(href=url) Del

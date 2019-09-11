@@ -1,30 +1,29 @@
-const express = require('express');
+var express = require('express');
+var router = express.Router();
 const UserDB = require('../module/user');
-
 const db = new UserDB();
-const router = express.Router();
+
 const getToken = (l = 20) => {
-  const result = '';
+  let result = '';
   for (let i = 0; i < l; i++) {
-    const index = Math.round(Math.random() * 50 + 65);
+    let index = Math.round(Math.random()*50+65);
     result += String.fromCharCode(index);
   }
   return result;
 };
-/* GET login page. */
-router.get('/', (req, res, next) => {
-  res.render('login', {
-    title: 'Login',
-  });
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('login', { title: 'Express' });
 });
 
 router.post('/', async (req, res, next) => {
-  const result = await db.login(req.body);
+  let result = await db.login(req.body);
   if (result.length === 1) {
-    res.cookie('uuid', getToken);
-    res.redirect('/');
+    res.cookie('uuid', getToken());
+    return res.redirect('/');
   }
-  res.render('login');
+  res.render('login', { title: 'Express' });
 });
 
 module.exports = router;
