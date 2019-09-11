@@ -1,81 +1,76 @@
 const path = require('path');
 const fs = require('fs');
 const mariadb = require('mariadb');
-const pool = mariadb.createPool({database: 'shop', user: 'root', password: 'root', connectionLimit: 5});
+
+const pool = mariadb.createPool({
+  database: 'shop',
+  user: 'root',
+  password: 'ROOT',
+  connectionLimit: 5,
+});
 
 module.exports = class DB {
-    constructor() {
-        pool.getConnection().then( conn => this.conn = conn );
-    }
+  constructor() {
+    pool.getConnection().then(conn => this.conn = conn);
+  }
 
-    async login(user) {
-        let sql = `
+  async login(user) {
+    const sql = `
             SELECT * FROM users 
             WHERE email = '${user.email}' 
                 AND password = SHA1('${user.password}')
         `;
-        let result = await this.conn.query(sql);
-        return result;
-    }
+    const result = await this.conn.query(sql);
+    return result;
+  }
 
-    async read(id) {
-        let sql = `
-        SELECT 
-            p.id, 
-            p.name, 
-            p.price,
-            p.stock, 
-            p.active, 
-            p.insdate, 
-            m.name AS manufacturer, 
-            m.contact AS contact	
+  async read(id) {
+    let sql = `
+        SELECT *
         FROM 
-            products p JOIN manufacturers m ON p.manufacturer = m.id 
+            users
         `;
 
-        if (id) {
-            sql += ` WHERE p.id = ${id}`;
-        }
-
-        let result = await this.conn.query(sql);
-        return result;
-
+    if (id) {
+      sql += ` WHERE users.id = ${id}`;
     }
 
-    async create(data) {
-        let sql = 
-        `
-        INSERT INTO products 
-        (name, manufacturer, price, stock, active) 
+    const result = await this.conn.query(sql);
+    return result;
+
+  }
+
+  async create(data, token) {
+    const sql = `
+        INSERT INTO users 
+        (name, email, password, token) 
         VALUES
-        ('${data.name}', ${data.manufacturer}, ${data.price}, ${data.stock}, 1)
+        ('${data.name}', '${data.email}', SHA1('${data.password}'), '${token}')
         `;
 
-        let result = await this.conn.query(sql);
-        return result;
-    }
+    const result = await this.conn.query(sql);
+    return result;
+  }
 
-    async delete(id) {
-        let sql = `
-            DELETE FROM products WHERE id = ${id}
+  async delete(id) {
+    const sql = `
+            DELETE FROM users WHERE users.id = ${id}
         `;
-        let result = await this.conn.query(sql);
-        return result;
-    }
+    const result = await this.conn.query(sql);
+    return result;
+  }
 
-    async update(product) {
-        let sql = 
-        `
-        UPDATE products 
+  async update(user) {
+    const sql = `
+        UPDATE users 
         SET 
-            name = '${product.name}', 
-            manufacturer = ${product.manufacturer}, 
-            price = ${product.price}, 
-            stock = ${product.stock},
-            active = ${product.active}
-        WHERE id = ${product.id}
+            name = '${user.name}', 
+            email = '${user.email}', 
+            password = '${user.password}', 
+            token = '${user.token}',
+        WHERE id = ${user.id}
         `;
-        let result = await this.conn.query(sql);
-        return result;
-    }
+    const result = await this.conn.query(sql);
+    return result;
+  }
 };

@@ -1,10 +1,8 @@
 const express = require('express');
-
-const router = express.Router();
 const UserDB = require('../module/user');
 
 const db = new UserDB();
-
+const router = express.Router();
 const getToken = (l = 20) => {
   let result = '';
   for (let i = 0; i < l; i++) {
@@ -13,23 +11,18 @@ const getToken = (l = 20) => {
   }
   return result;
 };
-
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('login', {
-    title: 'Express',
+  res.render('register', {
+    title: 'Register',
   });
 });
-
 router.post('/', async (req, res, next) => {
-  const result = await db.login(req.body);
-  if (result.length === 1) {
-    res.cookie('uuid', getToken());
-    return res.redirect('/');
-  }
-  res.render('login', {
-    wrong: 'Incorrect email or password',
-  });
+  const token = getToken();
+  console.log(req.body);
+  console.log(token);
+  await db.create(req.body, token);
+  return res.redirect('/');
 });
 
 module.exports = router;

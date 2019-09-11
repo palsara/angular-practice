@@ -58,7 +58,7 @@ module.exports = class DB {
   }
 
   async create(data) {
-    const sql =      `
+    const sql = `
         INSERT INTO products 
         (name, manufacturer, price, stock, active) 
         VALUES
