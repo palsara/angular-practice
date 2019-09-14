@@ -21,8 +21,15 @@ html
             a.nav-link(href="/about") About
           li.nav-item
             a.nav-link(href="/contact") Contact
-          li.nav-item(style='padding-left:800px')
-            a.nav-link(href="/login") Log in
+        ul.navbar-nav
+          if user
+            if user.id
+              li
+                span #{ user.name }
+                a.btn.btn-default(href="/logout") Log out
+            else
+              li
+                a.btn.btn-default(href="/login") Log in
 
 
     .container

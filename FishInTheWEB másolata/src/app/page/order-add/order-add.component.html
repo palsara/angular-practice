@@ -4,30 +4,30 @@
       <h3>Add new order</h3>
     </div>
     <div class="body bg-light text-success">
-      <form action="" class="form" (submit)="onSubmit($event)">
+      <form class="form" action="http://localhost:3000/api/orders" method="post">
         <div class="form-group">
           <label for="">
             <h4>Product ID</h4>
           </label>
-          <input type="text" name="productID" class="form-control" [(ngModel)]="newOrder.product">
+          <input type="text" name="products.id" class="form-control" [(ngModel)]="newOrder.product">
         </div>
         <div class="form-group">
           <label for="">
             <h4>User name</h4>
           </label>
-          <input type="text" name="userName" class="form-control" [(ngModel)]="newOrder.userName">
+          <input type="text" name="username" class="form-control" [(ngModel)]="newOrder.username">
         </div>
         <div class="form-group">
           <label for="">
             <h4>User email</h4>
           </label>
-          <input type="email" name="userEmail" class="form-control" [(ngModel)]="newOrder.userEmail">
+          <input type="email" name="useremail" class="form-control" [(ngModel)]="newOrder.useremail">
         </div>
         <div class="form-group">
           <label for="">
             <h4>Shipping Address</h4>
           </label>
-          <input type="text" name="shippingAddress" class="form-control" [(ngModel)]="newOrder.shippingAddress">
+          <input type="text" name="address" class="form-control" [(ngModel)]="newOrder.address">
         </div>
         <div class="form-group">
           <label for="">
@@ -35,8 +35,8 @@
           </label>
           <input type="number" name="quantity" class="form-control" [(ngModel)]="newOrder.quantity">
         </div>
-        <button class="btn col-2 offset-7 btn-secondary" (click)="onCancel()">CANCEL</button>
-        <button class="btn col-2 offset-1 btn-success" (click)="onAdd()">SAVE</button>
+        <button class="btn col-2 offset-7 btn-secondary" routerLink="/admin/order">CANCEL</button>
+        <button class="btn col-2 offset-1 btn-success" routerLink="/admin/order" (click)="onAdd()">SAVE</button>
       </form>
     </div>
   </div>

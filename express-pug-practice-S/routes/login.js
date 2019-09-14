@@ -24,7 +24,9 @@ router.get('/', (req, res, next) => {
 router.post('/', async (req, res, next) => {
   const result = await db.login(req.body);
   if (result.length === 1) {
-    res.cookie('uuid', getToken());
+    let token = getToken();
+    res.cookie('uuid', token);
+    await db.setUserToken(result[0].id, token);
     return res.redirect('/');
   }
   res.render('login', {

@@ -19,10 +19,11 @@ export class ProductsAdminComponent implements OnInit {
 
   ngOnInit() {
     this.productService.getAll().subscribe(
-      orders => this.list = orders,
+      products => this.list = products,
       err => console.error(err))
+    console.log(this.list);
   }
-  
+
   setSorterKey(key: string): void {
     if (key === this.orderKey) {
       this.orderDirection = this.orderDirection === 1 ? -1 : 1;

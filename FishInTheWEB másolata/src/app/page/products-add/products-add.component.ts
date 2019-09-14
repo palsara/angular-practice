@@ -28,11 +28,10 @@ export class ProductsAddComponent implements OnInit {
   }
   onCreate(): void {
 
-    this.newProduct.id = this.findNextID();
+    console.log(this.newProduct);
     this.productService.create(this.newProduct).subscribe(
       response => {
         this.router.navigate(["/admin/products"]);
-
       },
       err => console.error(err)
     )

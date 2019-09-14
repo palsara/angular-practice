@@ -21,27 +21,15 @@ export class ProductService {
   }
 
   create(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.apiUrl, product, {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-      }
-    });
+    return this.http.post<Product>(this.apiUrl, product);
   }
 
-  update( id, product: Product): Observable<Product> {
-    return this.http.put<Product>(`${this.apiUrl}/${id}`, product, {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-      }
-    });
+  update(product: Product): Observable<Product> {
+    return this.http.post<Product>(`${this.apiUrl}/${product.id}`, product);
   }
 
   remove(id: number): Observable<Product> {
-    return this.http.delete<Product>(`${this.apiUrl}/${id}`, {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-      }
-    });
+    return this.http.delete<Product>(`${this.apiUrl}/delete/${id}`);
   }
 
 

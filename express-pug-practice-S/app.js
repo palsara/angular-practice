@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-
+const UserDatabase = require('./module/user')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
@@ -11,7 +11,7 @@ const contactRouter = require('./routes/contact');
 const aboutRouter = require('./routes/about');
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
-
+const UserDB = new UserDatabase;
 const app = express();
 
 // view engine setup
@@ -26,6 +26,14 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(async (req, res, next) => {
+  let user = await UserDB.checkLogin(req)
+  if (user) {
+    req.user = user;
+  }
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
@@ -34,7 +42,10 @@ app.use('/about', aboutRouter);
 app.use('/delete/:id', productsRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
-
+app.use('/logout', (req, res, next) => {
+  res.clearCookie('uuid');
+  res.redirect('/');
+})
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

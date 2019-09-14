@@ -37,9 +37,9 @@ export class ProductsEditComponent implements OnInit {
   }
 
   onSave() {
-    this.productService.update(this.product.id, this.product).subscribe(
+    this.productService.update(this.product).subscribe(
       response => {
-        this.router.navigate(["admin/products"]);
+        this.router.navigate(["/admin/products"]);
       },
       err => console.error(err)
     )

@@ -48,7 +48,7 @@ export class OrderEditComponent implements OnInit {
 
   onUpdate() {
     this.order.category = this.product.category;
-    this.orderService.update(this.order.id, this.order).subscribe(
+    this.orderService.update(this.order).subscribe(
       response => {
         this.router.navigate(["../../order"], { relativeTo: this.ar });
       },

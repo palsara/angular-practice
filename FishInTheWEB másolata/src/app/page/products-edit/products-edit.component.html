@@ -1,60 +1,40 @@
 <div>&nbsp;</div>
 <div class="text-center">
-    <h1>Fish in the WEB - Admin page</h1>
-    <h2>Edit product</h2>
+  <h1>Fish in the WEB - Admin page</h1>
+  <h2>Edit product</h2>
 </div>
 <div>&nbsp;</div>
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div>&nbsp;</div>
+  <div class="row">
+    <div class="col-12">
+      <div>&nbsp;</div>
 
-            <form class="form-group text-center"
-                  action="">
-                <label for="name">Name</label>
-                <input class="form-control"
-                       id="name"
-                       name="firstName"
-                       type="text"
-                       [(ngModel)]="product.name">
-                <label for="price">Price</label>
-                <input class="form-control"
-                       id="price"
-                       name="lastName"
-                       type="text"
-                       [(ngModel)]="product.price">
-                <label for="category">Category</label>
-                <input class="form-control"
-                       id="category"
-                       name="age"
-                       type="text"
-                       [(ngModel)]="product.category">
-                <label for="details">Details</label>
-                <input name="details"
-                       id="details"
-                       class="form-control"
-                       type="text"
-                       [(ngModel)]="product.details">
-                <label for="imgSource">Img source</label>
-                <input class="form-control"
-                       id="imgSource"
-                       name="imgSource"
-                       type="text"
-                       [(ngModel)]="product.img">
-                <div>&nbsp;</div>
-                <div class="col-12 text-center btn-group">
-                    <button (click)="onSave()"
-                            class="btn btn-success">Save</button>
-                </div>
-                <div>&nbsp;</div>
-                <div class="col-12 text-center btn-group">
-                    <button (click)="onReset()"
-                            class="btn btn-warning">Reset</button>
-                    <button class="btn btn-danger"
-                            (click)="onDelete()">Delete</button>
-                </div>
-
-            </form>
+      <form class="form-group text-center" action="http://localhost:3000/api/products/{{product.id}}" method="post">
+        <label for="name">Name</label>
+        <input class="form-control" id="name" name="firstName" type="text" [(ngModel)]="product.name">
+        <label for="price">Price</label>
+        <input class="form-control" id="price" name="lastName" type="text" [(ngModel)]="product.price">
+        <label for="category">Category</label>
+        <input class="form-control" id="category" name="age" type="text" [(ngModel)]="product.category">
+        <label for="details">Details</label>
+        <input name="details" id="details" class="form-control" type="text" [(ngModel)]="product.details">
+        <label for="imgSource">Img source</label>
+        <input class="form-control" id="imgSource" name="imgSource" type="text" [(ngModel)]="product.img">
+        <label for="imgSource">Img source2</label>
+        <input class="form-control" id="imgSource2" name="imgSource2" type="text" [(ngModel)]="product.img2">
+        <label for="imgSource">Details</label>
+        <input class="form-control" id="details" name="details" type="text" [(ngModel)]="product.details">
+        <div>&nbsp;</div>
+        <div class="col-12 text-center btn-group">
+          <button (click)="onSave()" class="btn btn-success">Save</button>
         </div>
+        <div>&nbsp;</div>
+        <div class="col-12 text-center btn-group">
+          <button (click)="onReset()" class="btn btn-warning">Reset</button>
+          <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+        </div>
+
+      </form>
     </div>
+  </div>
 </div>

@@ -30,7 +30,13 @@
                 (click)="setSorterKey('category')">Category</th>
 
             <th scope="col-2"
+                (click)="setSorterKey('img')">Img</th>
+            <th scope="col-2"
+                (click)="setSorterKey('img2')">Img2</th>
+            <th scope="col-2"
                 (click)="setSorterKey('details')">Details</th>
+            <th scope="col-2"
+                (click)="setSorterKey('reviews')">Reviews</th>
             <th scope="col">Commands</th>
         </tr>
     </thead>
@@ -41,7 +47,10 @@
             <td>{{ product.price }}</td>
             <td>{{ product.category }}</td>
 
+            <td>{{ product.img }}</td>
+            <td>{{ product.img2 }}</td>
             <td>{{ product.details }}</td>
+            <td>{{ product.reviews }}</td>
             <td>
                 <div class="btn-group">
                     <button class="btn btn-secondary"
