@@ -1,8 +1,8 @@
+const mongoClient = require('mongodb').MongoClient;
 const DB = require('./database');
 
 module.exports = class GetHandler {
   constructor(req, res) {
-
     const reqParams = req.url.split('/');
 
 
@@ -15,6 +15,5 @@ module.exports = class GetHandler {
         res.end(JSON.stringify(err));
       },
     );
-
   }
 };
